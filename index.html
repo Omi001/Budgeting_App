@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budgeting App</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Script -->
+  <script src="script.js" defer></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="maincontainer">
+    <div class="container">
+      <div class="sub-container">
+        <!-- Budget -->
+        <div class="totalamount">
+          <h3>Budget</h3>
+          <p class="hide error" id="budget-err">
+            Value cannot be empty or negative
+          </p>
+          <input type="number" id="totalamount" placeholder="Enter Amount" />
+          <button class="submit" id="totalamount-button">Enter Budget</button>
+        </div>
+
+        <div class="user-amount-container">
+          <h3>Expenses</h3>
+          <p class="hide error" id="product-title-error">
+            Values cannot be empty
+          </p>
+          <input type="text" class="product-title" id="product-title" placeholder=" Expense Name" />
+          <input type="number" id="user-amount" placeholder=" Cost" />
+          <button class="submit" id="check-amount">Check Amount</button>
+        </div>
+      </div>
+
+      <div class="output-container flex-space">
+        <div>
+          <p>Total Budget</p>
+          <span id="amount">0</span>
+        </div>
+        <div>
+          <p>Expenses</p>
+          <span id="expenditure-value">0</span>
+        </div>
+        <div>
+          <p>Balance</p>
+          <span id="balance-amount">0</span>
+        </div>
+      </div>
+    </div>
+    <!-- List -->
+    <div class="list">
+      <h3>Expenses:</h3>
+      <div class="list-container" id="list"></div>
+    </div>
+  </div>
+
+
+  <div class="hide">
+    OMAR KHALID
+  </div>
+</body>
+
+</html>
